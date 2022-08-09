@@ -27,7 +27,24 @@ jobs:
         with:
           node-version: 16
       - name: Install dependencies
-        run: npm install
+        run: npm install --quiet
 
       - name: Build Angular app
         run: npm run build
+
+ lint:
+    if: github.event.name == 'pull_request'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: npm install --quiet
+
+      - name: Lint Workspace Apps
+        run: npm run lint
