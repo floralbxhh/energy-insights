@@ -26,17 +26,29 @@
   },
   "generators": {
     "@nrwl/angular:application": {
-      "style": "css",
+      "style": "scss",
       "linter": "eslint",
       "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
+      "e2eTestRunner": "cypress",
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "strict": true,
+      "prefix": "nrg",
+      "tags": "type:app",
+      "skipTests": true,
+      "standaloneConfig": true
     },
     "@nrwl/angular:library": {
       "linter": "eslint",
-      "unitTestRunner": "jest"
+      "unitTestRunner": "jest",
+      "strict": true,
+      "tags": "type:lib"
     },
     "@nrwl/angular:component": {
-      "style": "css"
+      "style": "scss",
+      "displayBlock": true,
+      "changeDetection": "OnPush"
     }
-  }
+  },
+  "defaultProject": "energy-insights-app"
 }
