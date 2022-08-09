@@ -1,8 +1,6 @@
 name: Energy Insights CI
 
-##
-  Configurations for NX Cloud
-##
+#Configurations for NX Cloud
 env:
   NODE_OPTIONS: --max_old_space_size=6144
   NX_BRANCH: ${{ github.event.number }}
