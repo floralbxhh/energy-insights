@@ -1,0 +1,27 @@
+name: Energy Insights CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+  workflow_dispatch:
+    branches:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Angular app
+        run: npm run build
