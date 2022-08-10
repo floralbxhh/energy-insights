@@ -17,7 +17,8 @@
     "paths": {
       "@energy-insights/root/environments": [
         "libs/root/environments/src/index.ts"
-      ]
+      ],
+      "@energy-insights/co2/data-access": ["libs/co2/data-access/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

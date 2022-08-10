@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "npmScope": "energy-insights",
   "affected": {
-    "defaultBase": "main"
+    "defaultBase": "master"
   },
   "implicitDependencies": {
     "package.json": {
@@ -41,8 +41,7 @@
     "@nrwl/angular:library": {
       "linter": "eslint",
       "unitTestRunner": "jest",
-      "strict": true,
-      "tags": "type:lib"
+      "strict": true
     },
     "@nrwl/angular:component": {
       "style": "scss",
