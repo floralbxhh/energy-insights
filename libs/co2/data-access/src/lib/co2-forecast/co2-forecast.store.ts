@@ -11,6 +11,8 @@ export class CO2ForecastStore extends ComponentStore<CO2ForecastState> {
   constructor() {
     super(initialState);
   }
+
+  records$ = this.select(store => store.records);
 }
 const initialState: CO2ForecastState = {
   records: [],
