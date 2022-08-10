@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/co2/data-access/src",
+  "prefix": "energy-insights",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/co2/data-access"],
+      "options": {
+        "jestConfig": "libs/co2/data-access/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/co2/data-access/**/*.ts",
+          "libs/co2/data-access/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:co2", "type:data-access"]
+}
