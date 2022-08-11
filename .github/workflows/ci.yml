@@ -32,7 +32,6 @@ jobs:
       - name: Build Angular app
         run: npm run build
   lint:
-    if: github.event.name == 'pull_request'
     runs-on: ubuntu-latest
 
     steps:
