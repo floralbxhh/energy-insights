@@ -2,16 +2,6 @@
   "projectType": "library",
   "sourceRoot": "libs/root/styles/src",
   "prefix": "energy-insights",
-  "targets": {
-    "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "options": {
-        "lintFilePatterns": [
-          "libs/root/styles/**/*.ts",
-          "libs/root/styles/**/*.html"
-        ]
-      }
-    }
-  },
+  "targets": {},
   "tags": ["scope: root", "type: styles"]
 }
