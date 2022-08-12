@@ -15,10 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@energy-insights/co2/data-access": ["libs/co2/data-access/src/index.ts"],
+      "@energy-insights/co2/feature-forecast": [
+        "libs/co2/feature-forecast/src/index.ts"
+      ],
       "@energy-insights/root/environments": [
         "libs/root/environments/src/index.ts"
-      ],
-      "@energy-insights/co2/data-access": ["libs/co2/data-access/src/index.ts"]
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

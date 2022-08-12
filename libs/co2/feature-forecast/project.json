@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/co2/feature-forecast/src",
+  "prefix": "energy-insights",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/co2/feature-forecast"],
+      "options": {
+        "jestConfig": "libs/co2/feature-forecast/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/co2/feature-forecast/**/*.ts",
+          "libs/co2/feature-forecast/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope: co2", "type: feature"]
+}

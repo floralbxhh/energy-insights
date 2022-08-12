@@ -21,6 +21,7 @@
     "@angular/router": "~14.1.1",
     "@ngrx/component-store": "^14.0.2",
     "@nrwl/angular": "^14.5.4",
+    "luxon": "^3.0.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -40,6 +41,7 @@
     "@nrwl/linter": "14.5.4",
     "@nrwl/workspace": "14.5.4",
     "@types/jest": "27.4.1",
+    "@types/luxon": "^3.0.0",
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
